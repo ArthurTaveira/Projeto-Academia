@@ -1,0 +1,36 @@
+{
+    "card1": {
+        "title": "Estudante",
+        "price": "45,00",
+        "topic1": "Treino todos os dias",
+        "topic2": "Acompanhamento profissional",
+        "topic3": "Registro de progresso",
+        "topic4": "Equipamentos apropriados",
+        "recomendad": false,
+        "check": false,
+        "estudante": true
+    },
+    "card2": {
+        "title": "Completo",
+        "price": "65,00",
+        "topic1": "Treino todos os dias",
+        "topic2": "Acompanhamento profissional",
+        "topic3": "Registro de progresso",
+        "topic4": "Equipamentos apropriados",
+        "recomendad": true,
+        "confirm": true,
+        "check": false
+    },
+    "card3": {
+        "title": "Simples",
+        "price":" 55,00",
+         "topic1" : "Treino 3 vezes na semana",
+         "topic2":" Acompanhamento profissional",
+         "topic3": "Registro de progresso",
+         "topic4": "Equipamentos apropriados",
+         "topic5": "Treino todos os dias",
+         "recomendad": false,
+         "confirm": false,
+         "check": true
+     }
+}
