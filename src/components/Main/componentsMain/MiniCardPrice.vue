@@ -25,7 +25,7 @@
 
         </div>
         
-        <div id="botaoAdd"><span id="nameButton">Obter</span></div>
+        <div id="botaoAdd"><a href="https://web.whatsapp.com/send?phone=88999501040" target="_blank" id="nameButton">Obter</a></div>
     </div>
     
 </template>
@@ -144,6 +144,7 @@
 #nameButton{
     z-index: 2;
     background-color: transparent;
+    color: #fff;
 }
 
 @media screen and (max-width: 74.938rem) {

@@ -350,6 +350,11 @@ input {
     #PagImc {
         padding:4rem 4rem;
     }
+
+    .title {
+        margin: auto;
+        margin-top: 3rem;
+    }
 }
 
 @media screen and (max-width: 31.25rem){

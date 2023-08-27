@@ -1,9 +1,19 @@
 <template>
-    <div>Treinadores</div>
+    <div class="title">
+
+        <h2>Personal Treiners</h2>
+
+        <div>
+            <span id="span1">TopFitness</span>
+            <span id="span2">Treinadores</span>
+        </div>
+
+    </div>
+
     <div id="PagCardTreiner" class="container">
-        <MiniCardPreco class="item"/>
-        <MiniCardPreco class="item"/>
-        <MiniCardPreco class="item"/>
+        <MiniCardPreco class="item" v-bind:treiner="treinerKerlon"/>
+        <MiniCardPreco class="item" v-bind:treiner="treinerMenina"/>
+        <MiniCardPreco class="item" v-bind:treiner="treinerEdigleuson"/>
     </div>
 </template>
 
@@ -13,7 +23,24 @@ import MiniCardPreco from './MiniCardTreiner.vue'
         name: 'PagTreiner',
         components: {
             MiniCardPreco 
+        },
+        data(){
+            return{
+                treinerKerlon: {
+                    img : '/img/treiner/KerlonRedondo.png',
+                    nome: 'Kerlon'
+                },
+                treinerMenina: {
+                    img : '/img/treiner/SamiaRedonda.png',
+                    nome: 'Samia'
+                },
+                treinerEdigleuson: {
+                    img : '/img/treiner/GledsonRedondo.png',
+                    nome: 'Gledson'
+                },
+            }
         }
+
     }
 </script>
 
@@ -24,7 +51,6 @@ import MiniCardPreco from './MiniCardTreiner.vue'
         justify-content: center;
         flex-flow: row wrap;
         width: 100%;
-        height: 100vh;
         
     }
 
@@ -37,5 +63,6 @@ import MiniCardPreco from './MiniCardTreiner.vue'
     opacity: 0.4;
     transform: scale(0.9);
   }
+
 
 </style>

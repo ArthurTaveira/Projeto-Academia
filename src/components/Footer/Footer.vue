@@ -1,56 +1,61 @@
 <template>
     <footer>
-        <!--IMG-->
-        <img id="imgLogo" src="/img/logo/imgRedondaLogoPrincipal.png" alt="">
-
-        <!--LISTAS-->
-        <div class="list">
-            <div class="listFooter">
-                <h3>TopFitness</h3>
-                
-                <ul>
-                    <li><a href="../Main/#pagHome" target="_self">> Home</a></li>
-                    <li><a href="">> Treinadores</a></li>
-                    <li><a href="../Main/#pagMap" target="_self">> Local</a></li>
-                    <li><a href="../Main/#pagCardPrices" target="_self">> Preços</a></li>
-                </ul>
-            </div>
-            <div class="listFooter">
-                <h3>Extras</h3>
-                <ul>
-                    <li><a href="../Main/#pagImc" target="_self">> Imc</a></li>
-                    <li><a href="">> Local</a></li>
-                    <li><a href="../Main/#slider" target="_self">> Produtos</a></li>
-                </ul>
-            </div>
+        <div class="LogoAndList">
+            <!--IMG-->
+            <img id="imgLogo" src="/img/logo/imgRedondaLogoPrincipal.png" alt="">
+            <!--LISTAS-->
+            <div class="list">
+                <div class="listFooter">
+                    <h3>TopFitness</h3>
             
-            <div class="listFooter">
-                <h3 >Desenvolvedor</h3>
-                <ul>
-                    <li><a href="https://www.instagram.com/_dev.arthur/" target="_blank"> <i class="fa-brands fa-instagram fa-sm" style="color: #ffffff;"></i> Instagram</a></li>
-
-                    <li><a href="https://www.linkedin.com/in/arthurtaveira/" target="_blank"> <i class="fa-brands fa-linkedin fa-sm" style="color: #ffffff;"></i> Linkedin</a></li>
-
-                    <li><a href="https://web.whatsapp.com/send?phone=88999619865" target="_blank"> <i class="fa-brands fa-whatsapp fa-sm" style="color: #ffffff;"></i> Whatsapp</a></li>
-                </ul>
+                    <ul>
+                        <li><a href="../Main/#pagHome" target="_self"> Home</a></li>
+                        <li><a href="../Main/#PagCardTreiner" target="_self"> Treinadores</a></li>
+                        <li><a href="../Main/#pagMap" target="_self"> Local</a></li>
+                        <li><a href="../Main/#pagCardPrices" target="_self"> Planos</a></li>
+                    </ul>
+                </div>
+                <div class="listFooter">
+                    <h3>Extras</h3>
+                    <ul>
+                        <li><a href="../Main/#pagImc" target="_self"> Imc</a></li>
+                        <li><a href="../Main/#pagMap" target="_self"> Local</a></li>
+                        <li><a href="../Main/#pagPhotos" target="_self"> Fotos </a></li>
+                        <!-- <li><a href="../Main/#slider" target="_self">> Produtos</a></li> -->
+                    </ul>
+                </div>
+            
+                <div class="listFooter">
+                    <h3 >Desenvolvedor</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/_dev.arthur/" target="_blank"> <i class="fa-brands fa-instagram fa-sm" style="color: #ffffff;"></i> Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/arthurtaveira/" target="_blank"> <i class="fa-brands fa-linkedin fa-sm" style="color: #ffffff;"></i> Linkedin</a></li>
+                        <li><a href="https://web.whatsapp.com/send?phone=88999619865" target="_blank"> <i class="fa-brands fa-whatsapp fa-sm" style="color: #ffffff;"></i> Whatsapp</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
 
         <!--Div que contem imagens e redes sociais-->
         <div class="ImgAndContact">
             <!--IMAGENS-->
-            <div>
-                <div>
-                    
-                    <img  class="imgGallery" src="/img/logo/imagemimagem.png" alt="">
-                    <img class="imgGallery" src="/img/logo/imagemimagem.png" alt="">
-                    <img class="imgGallery"  src="/img/logo/imagemimagem.png" alt="">
+            <div class="imgs">
+                <div class="contentLine">
+                    <div class="lineImg">
+                        <img  class="imgGallery" src="/img/logo/imagemimagem.png" alt="">
+                        <img class="imgGallery" src="/img/logo/imagemimagem.png" alt="">
+                    </div>
+                    <div class="lineImg">
+                        <img  class="imgGallery"  src="/img/logo/imagemimagem.png" alt="">
+                        <img class="imgGallery" src="/img/logo/imagemimagem.png" alt="">
+                    </div>
                 </div>
-                <div>
-                    <img class="imgGallery" src="/img/logo/imagemimagem.png" alt="">
+
+                <div class="columnImg">
                     <img class="imgGallery" src="/img/logo/imagemimagem.png" alt="">
                     <img class="imgGallery" src="/img/logo/imagemimagem.png" alt="">
                 </div>
+
             </div>
             <!--CONTATO E REDES SOCIAIS-->
             <div>
@@ -59,9 +64,9 @@
 
                     <div><a href="https://web.whatsapp.com/send?phone=88999501040" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></i></a></div>
 
-                    <div><a href=""><i class="fa-solid fa-location-dot fa-2xl" style="color: #ffffff;"></i></a></div>
+                    <div><a href="../Main/#pagMap" target="_self"><i class="fa-solid fa-location-dot fa-2xl" style="color: #ffffff;"></i></a></div>
                 </div>
-                <div id="botao-add"><span id="textButton">CONTATO</span></div>
+                <div id="botao-add"><a href="../Main/#pagContact" target="_self" id="linkContact">CONTATO</a></div>
             
             
             </div>
@@ -76,6 +81,8 @@
 </script>
 
 <style scoped>
+
+/*Geral */
     footer{
         background-color: rgb(39, 39, 39);
         width: 100%;
@@ -88,6 +95,7 @@
 
         color: rgb(170, 170, 170);
     }
+
 
     ul {
         list-style: none;
@@ -114,6 +122,11 @@
         justify-content: center;
         align-items: center;
     }
+
+    .LogoAndList{
+        display: flex;
+        gap: 2rem;
+    }
     
     #imgLogo {
         height: 7.5rem;
@@ -131,13 +144,37 @@
     }
 
     .listFooter {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     /*IMAGENS */
-    .imgGallery {
-        width: 4.5rem;
+
+    .imgs {
+        display: flex;
+        flex-direction: row;
     }
+
+    .imgGallery {
+        width: 90px;
+    }
+
+    .contentImg {
+        display: flex;
+        flex-flow: column;
+    }
+
+    
+    .lineImg {
+        display: flex;
+        flex-flow: row nowrap;
+        flex-direction: row;
+    }
+
+    .columnImg {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
 
     /* REDES SOCIAIS */
 
@@ -164,51 +201,50 @@
         justify-content: center;
         width: 12.5rem;
         position: relative;
-    
     }
 
-    #botao-add::before {
-    content: "";
-    border-radius: 1.25rem;
-    background-color: #fff;
-    position: absolute;
-    display: block;
-    color: #fff;
-    inset: 0;
-    z-index: 0;
-    transition: transform 300ms ease;
-    transform-origin: 100%;
-    transform: scaleX(0);
-    
-}
+    #botao-add:hover {
+        box-shadow: 0px 0px 0.5rem rgba(255, 255, 255, 0.548);
+    }
 
-#botao-add:hover::before {
-    transform: scaleX(1);
-    transition-duration: 500ms;
-    transform-origin: 0%;
-    border-radius: 1.25rem;
-    color: white;
-}
+    #botao-add a {
+        color: white;
+    }
 
-#botao-add:hover{
-    color: #39B547;
-    transition: 0.3s;
-    border-radius: 1.25rem;
-}
-
-#textButton{
-    z-index: 2;
-    background-color: transparent;
-}
 
 @media screen and (max-width: 68.75rem){
     .ImgAndContact {
-        
         margin: 2.5rem;
     }
 
     .imgGallery {
         width: 6rem;
+    }
+
+    .LogoAndList {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+@media screen and (max-width: 29.688rem){
+    .list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .listFooter ul {
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        flex-direction: column;
+    }
+
+    .listFooter {
+        font-size: 1.3rem;
     }
 }
 </style>

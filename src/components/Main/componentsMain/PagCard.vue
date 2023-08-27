@@ -14,7 +14,7 @@
       }
     },
     mounted(){
-      fetch('./data/Benefits.json')
+      fetch('/data/Benefits.json')
       .then((res)=> res.json())
       .then((cards)=> {
         this.card1 = cards.card1
@@ -75,7 +75,7 @@
     width: 100%;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    
   }
 
     /* Citação */
@@ -156,7 +156,6 @@
     q{
       font-size: 1.5rem;
     }
-
 }
 
 

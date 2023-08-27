@@ -1,30 +1,49 @@
 <template>
     
-    <div id="card-principal">
-        <div id="local-img">
+    <div id="cardPrincipal">
+        <!-- <div id="local-img">
             <img id='img' src="/img/logo/imagemimagem.png" alt="">
         </div>
         <div id="local-texts">
             <div>NOME</div>
             <div>PEQUENA FRASE</div>
-        </div>
+        </div> -->
+        <img :src="treiner.img" alt="">
+        <span>{{ treiner.nome }}</span>
     </div>
 </template>
 <script>
     export default {
-        name: 'PagTreiner'
+        name: 'PagTreiner',
+        props:{
+            treiner: Object
+        }
     }
 </script>
 <style scoped>
-        #card-principal{
-        height: 480px;
-        width: 320px;
-        border: 2px solid black;
-        margin: 50px;
+        #cardPrincipal{
+        height: auto;
+        width: auto;
+        margin: 0 50px 50px 50px;
         border-radius: 0.75rem;
         position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
+    #cardPrincipal span {
+        color: #222;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    .title {
+        margin: 0;
+    }
+/* 
     #local-img{
         background-color: rgb(105, 228, 24);
         height: 21.875rem;
@@ -37,6 +56,13 @@
         align-items: center;
         justify-content: center;
 
+    } */
+
+    img {
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        animation:  moveUpDown 3s infinite ease-in-out
     }
 
     #local-texts{
@@ -59,9 +85,17 @@
       transform: translateY(0);
     }
     50% {
-      transform: translateY(-1.25rem);
+      transform: translateY(-0.5rem);
     }
   }
+
+  @media screen and (max-width: 33.75rem){
+       
+       #card-principal{
+            margin: 0;
+           margin-bottom: 1.2;
+       }
+       }
 
 
 

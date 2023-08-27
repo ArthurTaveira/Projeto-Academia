@@ -149,12 +149,16 @@
         width: 22rem;
     }
 
+    .mapResponse {
+        margin: 0 0rem;
+    }
+}
+
+@media screen and (max-width: 1033px) {
+    
     .bubble {
         display: block;
-    }
+    } 
 
-    .mapResponse {
-        margin: 0 1rem;
-    }
 }
 </style>

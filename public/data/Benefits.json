@@ -3,22 +3,22 @@
       "card1" : {
         "titulo": "Força",
         "texto": "Ganho de força física através de exercícios desafiadores. Desafie a si mesmo!",
-        "img": "./img/icon/musculo-do-braco.png"
+        "img": "/img/icon/musculo-do-braco.png"
       },
       "card2": {
         "titulo": "Resistência",
         "texto": "Com os exercícios você se sentirá mais disposto e animado no seu dia a dia!",
-        "img": "./img/icon/forca-de-vontade.png"
+        "img": "/img/icon/forca-de-vontade.png"
       },
       "card3": {
         "titulo": "Cardio",
         "texto": "Exercícios aeróbicos são ótimos para o melhor funcionamento do corpo e da mente",
-        "img": "./img/icon/ginastica.png"
+        "img": "/img/icon/ginastica.png"
       },
       "card4": {
         "texto": "Estudos comprovam que a prática de atividade física leva a melhoras na qualidade de vida",
         "titulo": "+ Felicidade",
-        "img": "./img/icon/musculacao.png"
+        "img": "/img/icon/musculacao.png"
       }
     
 }

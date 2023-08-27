@@ -18,7 +18,7 @@
                 <div class="dropdownMenu">
                     <a href="../Main/#pagHome" target="_self">Início <i class="fa-solid fa-house fa-sm" style="color: #ffffff;"></i></a>
 
-                    <a href="">Professores <i class="fa-solid fa-users fa-sm" style="color: #ffffff;"></i></a>
+                    <a href="../Main/#PagCardTreiner" target="_self">Treinadores <i class="fa-solid fa-users fa-sm" style="color: #ffffff;"></i></a>
 
                     <a href="../Main/#pagMap" target="_self">Local <i class="fa-solid fa-location-dot fa-sm" style="color: #ffffff;"></i></a>
                     
@@ -38,8 +38,6 @@
                     <a href="../Main/#divBenefits" target="_self">Benefícios <i class="fa-solid fa-hand-holding-heart fa-sm" style="color: #ffffff;"></i></a>
 
                     <a href="../Main/#pagImc" target="_self">IMC <i class="fa-solid fa-calculator fa-sm" style="color: #ffffff;"></i></a>
-
-                    <a href="../Main/#slider" target="_self">Produtos <i class="fa-solid fa-prescription-bottle fa-sm" style="color: #ffffff;"></i></a>
 
                     <a href="../Main/#pagPhotos" target="_self">Fotos <i class="fa-solid fa-image fa-sm" style="color: #ffffff;"></i></a>
 

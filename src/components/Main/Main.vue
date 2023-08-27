@@ -1,28 +1,16 @@
 <template>
   <main>
-    
-
-    
       <PagPrincipal/>
       <PagCard/>
       <PagPhotosGym/>
       <PagPhotosSmall/>  
-    
-    
-    <!--
       <PagTreiner/>
-    -->
-
-    
-    <PagCardPrecos/>
-    <PagContact/>
-    <PagImc/>
-    <PagProdutcs/> 
-    <PagProductsSmall/>
-    <PagMap/>  
-  
-  
-  
+      <PagCardPrecos/>
+      <PagContact/>
+      <PagImc/>
+      <PagMap/> 
+    <!-- <PagProdutcs/> 
+    <PagProductsSmall/> -->
   </main>
 </template>
 
@@ -59,11 +47,16 @@ export default {
 
 <style>
 
+a {
+  text-decoration: none;
+  transition: 0.4s;
+}
+
 /* Estilização pad~rao de TITULOS */
   .title {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     flex-flow: row wrap;
     height: auto;
     margin: 2.6rem auto;
@@ -88,9 +81,10 @@ export default {
             justify-content: center;
             align-items: center;
             width: 100%;
-            margin: 1.25rem auto;
-            gap: 0.5rem;
+            margin: 1.25rem auto 3rem auto;   
+            gap: 1.3rem;
         } 
+
     }
 
     @media screen and (max-width: 12.5rem) {
